@@ -5,7 +5,7 @@
 
 using namespace std;
 
-string NNDecoding(int a[], int b[]){//a[] receives the message after the noisy channel
+void NNDecoding(int a[], int b[]){//a[] receives the message after the noisy channel
 	//b[] receives the vector that will return the decoded message
 	//Defining a matrix with all the possibles codewords
 	//each line of the matrix MatMessages defines a possible codeword
@@ -44,26 +44,9 @@ string NNDecoding(int a[], int b[]){//a[] receives the message after the noisy c
 			LineIndex=i;
 		}
 	}
-	//Detecting the errors (the H(7,4) code detect 2 or fewer errrors).
-	//An error will be detected when-ever a received word is not a code word.
-	string Detection;
-	if (Errors==0){
-		Detection="(0 errors)";
-	}
-	if(Errors==1){
-		Detection="(1 error)";
-	}
-	if(Errors==2){
-		Detection="(2 errors)";
-	}
-	if(Errors>2){
-		Detection="(3 or more errors)";
-	}
-
 
 	//Passing the decoded message to the vector b[]
 	for (int i = 0; i < 4; ++i){
 		*(b+i)=*(*(MatMessages+LineIndex)+i);
 	}
-	return Detection;
 }
