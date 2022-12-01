@@ -4,4 +4,4 @@ One of the most interesting and important applications of finite fields has been
 originated in the late 1940s, was created in response to practical communication problems. Algebraic codes are now used in compact disc and DVD players, 
 fax machines, digital televisions, and bar code scanners, and are essential to computer maintenance.
 
-This repository was built to storage some classical Error Correcting Codes for educational purposes. The source code is written in C++.
+This repository was built for educational purposes, each file storage a source code in C++ able to simulate the functinalities of a classical error correcting code.
