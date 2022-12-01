@@ -1,8 +1,3 @@
-/*The fstream term stands for File Stream. Stream refers to a sequence of 
-characters moving from the disk to the C++ program or from the C+ program to the disk. 
-Moving characters from a file in disk to the program is inputting. Moving characters from 
-the program to a file in the disk is outputting.
-*/
 
 #include <typeinfo>//for checking the type of the variable
 #include <stdlib.h>     /* srand, rand */
@@ -44,8 +39,6 @@ int main()
    int* ptr = mat3;
    //creating a pointer to DecMessage
    int* ptrDecMessage=DecMessage;
-   //define a String
-   string Detection;
    //initialize random seed:
    srand (time(NULL));
 
