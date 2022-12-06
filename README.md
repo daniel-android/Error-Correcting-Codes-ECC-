@@ -6,4 +6,4 @@ fax machines, digital televisions, and bar code scanners, and are essential to c
 
 This repository was built for educational purposes, each file storing a source code in C++ able to simulate the functionalities of a classical error correcting code. In general, a communication system follows the scheme below: 
 
-                                              ENCODER ---> NOISY COMMUNICATION CHANNEL ---> DECODING
+           ENCODER ---> NOISY COMMUNICATION CHANNEL ---> DECODING
